@@ -1,181 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitologia Grega</title>
+    <title>Mitologia grega</title>
     <style>
-        /* Configurações Gerais e Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+       header{
+          background-color:rgb(141, 224, 238);
+          color:rgb(95, 90, 168);
+          text-align: center;
+          max-width: 800px;
+          margin: 0, auto;
+          padding: 8px;
+          border: 5px, solid, rgb(101, 99, 99);
+          display: flexbox;
+       }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.7;
-            background-color: #f4f7f6;
-            color: #2c3e50;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+       main{
+         background-color: rgb(160, 234, 243);
+         color: black;
+         text-align: center;
+         max-width: 800px;
+         margin: 0, auto;
+       }
 
-        /* Cabeçalho */
-        header {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Tons de azul escuro "olímpico" */
-            color: #ffffff;
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 4px solid #d4af37; /* Detalhe em dourado */
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        header p {
-            font-style: italic;
-            color: #bdc3c7;
-            font-size: 1.1rem;
-        }
-
-        /* Conteúdo Principal */
-        main {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            flex: 1;
-        }
-
-        .introducao {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            margin-bottom: 30px;
-            border-left: 5px solid #d4af37;
-        }
-
-        .introducao p {
-            font-size: 1.1rem;
-            color: #4a5568;
-        }
-
-        /* Container da Imagem de Destaque */
-        .imagem-destaque {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .imagem-destaque img {
-            max-width: 100%;
-            height: auto;
-            max-height: 500px; /* Evita que a imagem fique gigante verticalmente */
-            border-radius: 8px;
-            border: 3px solid #d4af37; /* Borda dourada combinando com o tema */
-            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-        }
-
-        h2 {
-            color: #0f2027;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 8px;
-        }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background-color: #d4af37;
-        }
-
-        /* Lista de Deuses */
-        .lista-deuses {
-            list-style: none;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
-        }
-
-        .lista-deuses li {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .lista-deuses li:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .lista-deuses strong {
-            color: #2c5364;
-            font-size: 1.2rem;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        /* Rodapé */
-        footer {
-            background-color: #0f2027;
-            color: #7f8c8d;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-            border-top: 1px solid #1a3644;
-            margin-top: auto;
-        }
-
-        footer p {
-            color: #bdc3c7;
-        }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>Mundo da Mitologia Grega</h1>
-        <p>Lendas, Deuses e os Mistérios da Antiguidade</p>
-    </header>
+   <h1>Mitologia grega</h1>
+   <p> Zeus, Poseidon e Apolo </p>
+   </header>
 
-    <main>
-        <section class="introducao">
-            <p>A mitologia grega é o conjunto de histórias, mitos e lendas criados na Grécia Antiga para explicar a origem do mundo, os fenômenos da natureza e a vida dos deuses e heróis.</p>
-        </section>
-
-        <section class="imagem-destaque">
-            <img src="imagens/poseidon.jpeg" alt="Ilustração do Deus Poseidon">
-        </section>
-
-        <section>
-            <h2>Os Principais Deuses Olímpicos</h2>
-            <ul class="lista-deuses">
-                <li><strong>Zeus</strong> O rei dos deuses, mestre dos céus e do trovão.</li>
-                <li><strong>Poseidon</strong> O deus dos mares, dos terremotos e dos cavalos.</li>
-                <li><strong>Hades</strong> O senhor do submundo e do reino dos mortos.</li>
-                <li><strong>Atena</strong> A deusa da sabedoria, da estratégia e da justiça.</li>
-                <li><strong>Ares</strong> O deus da guerra e da violência.</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 - Portal Mitologia Grega. Desenvolvido para fins educacionais.</p>
-    </footer>
+   <main>
+      <img src="" alt=""/>
+      <h2> Os Deuses do Olimpo: </h2>
+      <p> Por Kauane</p>
+   </main>
 
 </body>
 </html>
+
