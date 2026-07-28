@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mitologia grega</title>
-    <style>
+   
+   <style>
        header{
           background-color:rgb(141, 224, 238);
           color:rgb(95, 90, 168);
@@ -25,8 +27,8 @@
          display: flex;
        }
        img{
-         width: 120px;
-         height: 120px;
+         width: 400px;
+         height: 200px;
        }
        .artigo-autor{
          font-weight: bold;
@@ -41,10 +43,23 @@
    </header>
 
    <main>
-      <img src="imagen-blog.jpeg" alt="Alt Text: Imagem em estilo pixel art com moldura cinza mostrando três deuses gregos sobre nuvens, com o Monte Olimpo ao fundo. À esquerda, Poseidon tem barba escura, veste túnica azul e verde, e segura um tridente próximo a um golfinho na água. Ao centro, Zeus está em um trono, tem barba grisalha, veste túnica branca e segura um raio brilhante. À direita, Apolo tem cabelos loiros com uma auréola solar, veste túnica branca e segura uma lira de ouro."/>
-      <h2 class="artigo-autor"> Os Deuses do Olimpo: Por Kauane </h2>
+      <img src="imagen-blog.jpeg" alt= "Poseidon (À Esquerda): O Deus dos Mares segura firmemente seu tridente sagrado, cercado pelas águas e acompanhado por um golfinho. Seus trajes azuis e esverdeados refletem a profundeza dos oceanos.
+      Zeus (Ao Centro): O Rei dos Deuses e Governante do Olimpo ocupa o trono central. Com sua barba grisalha e coroa de louros, ele segura um raio brilhante em uma das mãos e o cetro real na outra, ostentando toda a sua autoridade sobre o céu e os trovões.
+      Apolo (À Direita): O Deus do Sol, da Música e da Poesia ilumina o lado direito da composição. Com uma calha reluzente ao fundo, ele segura sua lira de ouro e carrega o arco e as flechas nas costas."/>
+   <div>
+         <h2> Os deuses que vamos estudar: </h2>
+         <p> class="artigo-autor">por Kauane</p>
+         <p></p>
+         <button>🙈 <span>0</span></button>
+      </div>
+
    </main>
 
 </body>
-</html>
 
+<script>
+   const botao = document. querySelector("button");
+   botao.addEventListener("click", botaoClicado);
+</script>
+
+</html>
