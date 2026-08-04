@@ -48,8 +48,8 @@
       Apolo (À Direita): O Deus do Sol, da Música e da Poesia ilumina o lado direito da composição. Com uma calha reluzente ao fundo, ele segura sua lira de ouro e carrega o arco e as flechas nas costas."/>
    <div>
          <h2> Os deuses que vamos estudar: </h2>
-         <p> class="artigo-autor">por Kauane</p>
-         <p></p>
+         <p>por Kauane</p>
+         <p> Bem vindo ao meu blog!! Vamos aprender sobre mitologia grega.</p>
          <button>🙈 <span>0</span></button>
       </div>
 
@@ -60,6 +60,13 @@
 <script>
    const botao = document. querySelector("button");
    botao.addEventListener("click", botaoClicado);
+
+    function botaoClicado(){
+         console.log("fui clicado");
+         let  texto = botao.querySelector("span");
+         texto.textContent++;
+    }
+
 </script>
 
 </html>
