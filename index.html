@@ -51,14 +51,17 @@
          <p>por Kauane</p>
          <p> Bem vindo ao meu blog!! Vamos aprender sobre mitologia grega.</p>
          <button>🙈 <span>0</span></button>
-      </div>
+         <button>💯 <span>0</span></button>
 
-   </main>
+      </div>
+</main>
 
 </body>
 
 <script>
-   const botao = document. querySelector("button");
+   const botoes = document.querySelectorAll("button");
+
+   botoes.forEach(function(botao){
    botao.addEventListener("click", botaoClicado);
 
     function botaoClicado(){
@@ -66,6 +69,7 @@
          let  texto = botao.querySelector("span");
          texto.textContent++;
     }
+   })
 
 </script>
 
