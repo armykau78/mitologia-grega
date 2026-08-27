@@ -1,26 +1,79 @@
-header{
-          background-color:rgb(141, 224, 238);
-          color:rgb(95, 90, 168);
-          text-align: center;
-          max-width: 800px;
-          margin: 0, auto;
-          padding: 8px;
-          border: 5px, solid, rgb(101, 99, 99);
-          display: flexbox;
-       }
+header { 
+    background-color: rgb(141, 224, 238); 
+    color: rgb(95, 90, 168); 
+    text-align: center; 
+    max-width: 800px; 
+    margin: 0 auto; /* Removida a vírgula incorreta */
+    padding: 16px; 
+    border: 5px solid rgb(101, 99, 99); /* Removidas as vírgulas incorretas */
+}
 
-       main{
-         background-color: rgb(160, 234, 243);
-         color: black;
-         text-align: center;
-         max-width: 800px;
-         margin: 0, auto;
-         display: flex;
-       }
-       img{
-         width: 400px;
-         height: 200px;
-       }
-       .artigo-autor{
-         font-weight: bold;
-       }
+main { 
+    background-color: rgb(160, 234, 243); 
+    color: black; 
+    text-align: center; 
+    max-width: 800px; 
+    margin: 0 auto; /* Removida a vírgula incorreta */
+    padding: 20px;
+    display: flex; 
+    flex-direction: column; /* Alinha o conteúdo principal de cima para baixo */
+    align-items: center; /* Centraliza tudo horizontalmente */
+    gap: 20px; /* Cria um espaçamento padrão entre os blocos */
+}
+
+/* Ajuste do banner principal */
+.banner-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Container que segura os deuses */
+.galeria-deuses {
+    display: flex;
+    flex-direction: column; /* Coloca uma imagem embaixo da outra */
+    gap: 30px; /* Espaço entre um deus e outro */
+    margin-top: 20px;
+}
+
+/* Estilo do cartão (imagem + texto bonito) */
+.cartao-deus {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave de fundo */
+    overflow: hidden;
+    max-width: 450px; /* Segura o tamanho do cartão */
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste das imagens dos deuses */
+.cartao-deus img { 
+    width: 100%; /* Ocupa toda a largura do cartão */
+    height: 250px; 
+    object-fit: cover; /* Recorta a imagem sem distorcer */
+}
+
+/* Estilo do textinho embaixo das imagens */
+.cartao-deus figcaption {
+    padding: 20px;
+    text-align: left; /* Texto alinhado à esquerda fica mais legível */
+}
+
+.cartao-deus h3 {
+    margin: 0 0 10px 0;
+    color: rgb(95, 90, 168);
+    font-size: 1.4rem;
+}
+
+.cartao-deus p {
+    margin: 0;
+    color: #444;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.artigo-autor { 
+    font-weight: bold; 
+}
