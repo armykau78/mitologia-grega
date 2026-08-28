@@ -1,15 +1,21 @@
+body {
+    background-color: rgb(0, 0, 0); /* Define o fundo da página como preto */
+    margin: 0;
+    padding: 0;
+}
+
 header { 
-    background-color: rgb(141, 224, 238); 
-    color: rgb(95, 90, 168); 
+    background-color: rgb(95, 42, 131); 
+    color: rgb(0, 0, 0); 
     text-align: center; 
     max-width: 800px; 
     margin: 0 auto; /* Removida a vírgula incorreta */
     padding: 16px; 
-    border: 5px solid rgb(101, 99, 99); /* Removidas as vírgulas incorretas */
+    border: 5px solid rgb(0, 0, 0); /* Removidas as vírgulas incorretas */
 }
 
 main { 
-    background-color: rgb(160, 234, 243); 
+    background-color: rgb(95, 42, 131); 
     color: black; 
     text-align: center; 
     max-width: 800px; 
@@ -39,7 +45,7 @@ main {
 
 /* Estilo do cartão (imagem + texto bonito) */
 .cartao-deus {
-    background-color: white;
+    background-color: rgb(139, 96, 161);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave de fundo */
     overflow: hidden;
@@ -63,13 +69,13 @@ main {
 
 .cartao-deus h3 {
     margin: 0 0 10px 0;
-    color: rgb(95, 90, 168);
+    color: rgb(0, 0, 0);
     font-size: 1.4rem;
 }
 
 .cartao-deus p {
     margin: 0;
-    color: #444;
+    color: #000000;
     line-height: 1.5;
     font-size: 0.95rem;
 }
