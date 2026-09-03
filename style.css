@@ -2,6 +2,7 @@ body {
     background-color: rgb(0, 0, 0); /* Define o fundo da página como preto */
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif; /* Uma fonte limpa e moderna para o blog */
 }
 
 header { 
@@ -9,9 +10,9 @@ header {
     color: rgb(0, 0, 0); 
     text-align: center; 
     max-width: 800px; 
-    margin: 0 auto; /* Removida a vírgula incorreta */
+    margin: 0 auto; 
     padding: 16px; 
-    border: 5px solid rgb(0, 0, 0); /* Removidas as vírgulas incorretas */
+    border: 5px solid rgb(0, 0, 0); 
 }
 
 main { 
@@ -19,7 +20,7 @@ main {
     color: black; 
     text-align: center; 
     max-width: 800px; 
-    margin: 0 auto; /* Removida a vírgula incorreta */
+    margin: 0 auto; 
     padding: 20px;
     display: flex; 
     flex-direction: column; /* Alinha o conteúdo principal de cima para baixo */
@@ -47,7 +48,7 @@ main {
 .cartao-deus {
     background-color: rgb(139, 96, 161);
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra um pouco mais visível no fundo preto */
     overflow: hidden;
     max-width: 450px; /* Segura o tamanho do cartão */
     margin: 0 auto;
@@ -78,6 +79,30 @@ main {
     color: #000000;
     line-height: 1.5;
     font-size: 0.95rem;
+}
+
+/* ==========================================
+   NOVO: Estilo da Fonte de Pesquisa e Links
+   ========================================== */
+.fonte-pesquisa {
+    margin-top: 15px !important; /* Força um espaçamento do parágrafo de cima */
+    font-size: 0.85rem !important; /* Deixa o texto da fonte menor e discreto */
+    font-style: italic; /* Deixa em itálico para diferenciar do texto principal */
+    color: #222222; /* Um tom de cinza escuro para a palavra "Fonte:" */
+}
+
+.fonte-pesquisa a {
+    color: #ffffff; /* Link em branco para contrastar muito bem com o roxo do fundo */
+    text-decoration: none; /* Remove aquele sublinhado padrão feio */
+    font-weight: bold; /* Deixa o nome do site em negrito */
+    border-bottom: 1px dashed #ffffff; /* Adiciona uma linha pontilhada charmosa embaixo */
+    transition: all 0.3s ease; /* Faz o efeito de passar o mouse ficar suave */
+}
+
+/* Efeito quando o usuário passa o mouse por cima do link */
+.fonte-pesquisa a:hover {
+    color: #ffeb3b; /* O link acende em amarelo (cor que lembra ouro/mitologia) */
+    border-bottom: 1px solid #ffeb3b; /* A linha também muda para amarelo */
 }
 
 .artigo-autor { 
